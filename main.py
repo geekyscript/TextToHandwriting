@@ -12,7 +12,7 @@ font_path = "DancingScript-VariableFont_wght.ttf"  # You’ll need a handwriting
 font_size = 32
 
 # Step 3: Create a blank white image (like paper)
-width, height = 800, 1000
+width, height = 700, 1000
 background = Image.new("RGB", (width, height), "white")
 draw = ImageDraw.Draw(background)
 
@@ -25,5 +25,5 @@ for line in textwrap.wrap(text, width=40):
     offset += font_size + 10
 
 # Step 5: Save the output
-background.save("handwritten_note.png")
-print("✅ Handwritten note created locally: handwritten_note.png")
+background.save("handwritten_note.jpg")
+print("✅ Handwritten note created locally: handwritten_note.jpg")
